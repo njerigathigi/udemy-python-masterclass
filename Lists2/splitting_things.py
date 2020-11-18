@@ -36,9 +36,15 @@ print(values_list)
 #you can either modify the contents of the 'values_list' list in place,
 #or create a new list of ints.
 
+#create a new list
 new_list = []
 for value in values_list:
     new_list.append(int(value))
 
 print(new_list)
 
+#replace the values in place
+for index in range(len(values_list)):
+    values_list[index] = int(values_list[index])
+
+print(values_list)
