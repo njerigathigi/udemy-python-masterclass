@@ -6,7 +6,8 @@ input("Press ENTER to start")
 
 guesses = 1
 
-while True:
+while low != high:
+    print("HIGH: {}".format(high))
     guess = low + (high - low) // 2 # // is floored division.
     #truncates answer to an integer
     high_low = input("My guess is {}. Should i guess higher or lower?"
@@ -19,11 +20,17 @@ while True:
     elif high_low == "l":
         #guess higher
         high = guess - 1
-    elif high_low == "c":
-        print("I got it in {} guesses".format(guesses))  
-        break  
-    else:
-        print("Please enter h,l or c")
-    
+    # elif high_low == "c":
+    #     print("I got it in {} guess(es)".format(guesses))  
+    #     break  
+    # else:
+    #     print("Please enter h,l or c")
+
     guesses += 1
+
+    
+    
+else:
+    print("Your guess is {}".format(low))
+    print("I got it in {} guesses".format(guesses))
     

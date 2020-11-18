@@ -7,4 +7,3 @@ print()
 # backwards = letters[25::-1]#defaults to the start
 # print(backwards)
 backwards = letters[::-1]#defaults to the start and end
-print(backwards)
