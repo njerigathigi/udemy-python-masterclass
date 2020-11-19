@@ -8,4 +8,4 @@ print(name, age, 'Python', 2020, sep=', ') #separator (keyword argument)
                                            #used when we pass more than one value
                                            #to the print function.
 
-
+print((name,age,'Python',2020)) #tuple #one object
